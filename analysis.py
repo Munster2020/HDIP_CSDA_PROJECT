@@ -11,4 +11,10 @@ h = iris_df['petal length in cm'].describe()
 i = iris_df['petal width in cm'].describe()
 j = iris_df['class'].describe()
 
-print(f, g, h, i, j)
+f.to_csv (r'C:\Users\bshor\Documents\HDIP_CSDA_PROJECT\iris_summary.csv', header=True)
+print (f)
+#print(f, g, h, i, j)
+
+#savefile = open('iris_summary.txt','w')
+#savefile.write(f)
+#savefile.close()
