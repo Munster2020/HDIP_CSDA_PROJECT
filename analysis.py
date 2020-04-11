@@ -44,7 +44,20 @@ j = iris_df['class'].describe()
 
 print (f,g,h,i,j)
 
+# Creates a histogram of sepal length
+sns.distplot( iris_df['sepal length in cm'] )
+plt.show()
+
+
+
+'''
+iris_df.describe().plot(kind='area', fontsize=27, figsize = (20,8), table = True,colormap='rainbow')
+plt.xlabel ('Statistics' ,)
+plt.ylabel ('Value')
+plt.title ('General Statistics of Iris Dataset')
+plt.show()
 # k=f
 #num_bins = 5
 #n, bins, patches = plt.hist(k, num_bins, facecolor='blue', alpha=0.5)
 # plt.show()
+'''
