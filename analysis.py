@@ -12,7 +12,8 @@ import matplotlib.mlab as mlab
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import sys # Allows the use of stdout to output a summary of each variable to a text file.
+# Allows the use of stdout to output a summary of each variable to a text file.
+import sys
 
 # Output a summary of the dataset and each variable to text file called "Summary"
 summary = open("iris_summary.txt", 'w')
@@ -22,18 +23,18 @@ sys.stdout = summary
 # See Readme for source and file description.
 iris_df = pd.read_csv('iris.csv')
 
-# Data exploration. This step is to have a quick view of the data before continuing.  
+# Data exploration. This step is to have a quick view of the data before continuing.
 data = iris_df.head()
-print (data)
+print(data)
 
-# This step checks if there is any missing values. It also displays information about the dataframe 
+# This step checks if there is any missing values. It also displays information about the dataframe
 # including index dtype and column dtypes, non-null valuesand memory usage.
 datatypes = iris_df.info()
-print (datatypes)
+print(datatypes)
 
 # View the classification of flowers
 species = iris_df['class'].value_counts()
-print (species)
+print(species)
 
 # View some basic statistical details like percentile, mean, std etc. of the data frame
 f = iris_df['sepal length in cm'].describe()
@@ -42,13 +43,24 @@ h = iris_df['petal length in cm'].describe()
 i = iris_df['petal width in cm'].describe()
 j = iris_df['class'].describe()
 
-print (f,g,h,i,j)
+print(f, g, h, i, j)
+
+# The next stage of the project moves on to creating histograms and scattareplots
+a = 'sepal length in cm'
+b = 'sepal width in cm'
+
 
 # Creates a histogram of sepal length
-sns.distplot( iris_df['sepal length in cm'] )
-plt.show()
+sns.set_style('darkgrid')
+sns.distplot(iris_df[a], rug=True, )
+plt.title('Histogram of Sepal Length')
+plt.xlabel('')
+plt.savefig('Histogram of Sepal Length')
 
+#plt.savefig('sepal length in cm')
+#sns.pairplot(iris_df, hue='class')
 
+# plt.show()
 
 '''
 iris_df.describe().plot(kind='area', fontsize=27, figsize = (20,8), table = True,colormap='rainbow')
