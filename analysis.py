@@ -55,7 +55,7 @@ sns.set_style('darkgrid')
 sns.distplot(iris_df[a], rug=True, )
 plt.title('Histogram of Sepal Length')
 plt.xlabel('')
-plt.savefig('Histogram of Sepal Length')
+plt.savefig('histogram_of_sepal_length')
 
 #plt.savefig('sepal length in cm')
 #sns.pairplot(iris_df, hue='class')
