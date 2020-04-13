@@ -6,56 +6,79 @@
 # Numpy library adds support  for large, multi-dimensional arrays and matrices as well as mathematical functions.
 # The Pandas library provides ease of use data structures and analysis tools.
 # Seaborn is a a Python data visualiization library. It offers an interface for creating informative attractive statistical graphs.
+# Sys, his module provides a number of functions and variables that can be used to manipulate different parts of the Python runtime environment.
+
 
 import matplotlib.pyplot as plt
 import matplotlib.mlab as mlab
 import numpy as np
 import pandas as pd
 import seaborn as sns
-# Allows the use of stdout to output a summary of each variable to a text file.
 import sys
-
-# Output a summary of the dataset and each variable to text file called "Summary"
-summary = open("iris_summary.txt", 'w')
-sys.stdout = summary
 
 # Reads the contents of 'iris.csv' dataset
 # See Readme for source and file description.
 iris_df = pd.read_csv('iris.csv')
 
-# Data exploration. This step is to have a quick view of the data before continuing.
-data = iris_df.head()
-print(data)
+# Output a summary of the dataset and each variable to text file called "Summary"
+sys.stdout = open("iris_summary.txt", 'w')
 
-# This step checks if there is any missing values. It also displays information about the dataframe
-# including index dtype and column dtypes, non-null valuesand memory usage.
-datatypes = iris_df.info()
-print(datatypes)
 
-# View the classification of flowers
-species = iris_df['class'].value_counts()
-print(species)
+print ('===============')
+print ('First Five Rows')
+print (iris_df.head())
+print ('===============')
+print ('Information on the dataset')
+print (iris_df.info())
+print ('=============')
+print ('Statistical Summary of the dataset')
+print (iris_df.describe())
+print ('===============')
 
-# View some basic statistical details like percentile, mean, std etc. of the data frame
-f = iris_df['sepal length in cm'].describe()
-g = iris_df['sepal width in cm'].describe()
-h = iris_df['petal length in cm'].describe()
-i = iris_df['petal width in cm'].describe()
-j = iris_df['class'].describe()
-
-print(f, g, h, i, j)
 
 # The next stage of the project moves on to creating histograms and scattareplots
 a = 'sepal length in cm'
 b = 'sepal width in cm'
-
+c = 'petal length in cm'
+d = 'petal width in cm'
 
 # Creates a histogram of sepal length
 sns.set_style('darkgrid')
-sns.distplot(iris_df[a], rug=True, )
+sns.distplot(iris_df[a])
 plt.title('Histogram of Sepal Length')
 plt.xlabel('')
+plt.ylabel('Frequency')
 plt.savefig('histogram_of_sepal_length')
+plt.close()
+
+# Creates a histogram of sepal width
+sns.set_style('darkgrid')
+sns.distplot(iris_df[b])
+plt.title('Histogram of Sepal Width')
+plt.xlabel('')
+plt.ylabel('Frequency')
+plt.savefig('histogram_of_sepal_width')
+plt.close()
+
+# Creates a histogram of petal length
+sns.set_style('darkgrid')
+sns.distplot(iris_df[c])
+plt.title('Histogram of Petal Length')
+plt.xlabel('')
+plt.ylabel('Frequency')
+plt.savefig('histogram_of_petal_length')
+plt.close()
+
+# Creates a histogram of petal width
+sns.set_style('darkgrid')
+sns.distplot(iris_df[c])
+plt.title('Histogram of Petal Width')
+plt.xlabel('')
+plt.ylabel('Frequency')
+plt.savefig('histogram_of_petal_width')
+plt.close()
+
+
 
 #plt.savefig('sepal length in cm')
 #sns.pairplot(iris_df, hue='class')
