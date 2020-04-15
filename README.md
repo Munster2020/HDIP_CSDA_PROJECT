@@ -41,3 +41,15 @@ The data set contains the following attibutes.
 [University of Warwick: Plotting the Iris Data](https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/r/iris_plots/)
 
 [GeeksforGeeks: Box plot and Histogram exploration on Iris data](https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/)
+
+[Kaggle: Seaborn Matplotlib plot to visualize Iris data](https://www.kaggle.com/biphili/seaborn-matplotlib-plot-to-visualize-iris-data)
+
+[Pandas: pandas.DataFrame.info](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.info.html)
+
+[Medium: Exploratory Data Analysis : Iris DataSet](https://medium.com/@harimittapalli/exploratory-data-analysis-iris-dataset-9920ea439a3e)
+
+[Stackoverflow: How to redirect the output of print to a TXT file](https://stackoverflow.com/questions/4110891/how-to-redirect-the-output-of-print-to-a-txt-file)
+
+[YouTube: Intermediate Python 7: numpy's loadtxt and savetxt](https://www.youtube.com/watch?v=bqo3BmzyXeI)
+
+[YouTube: Import Data, Analyze, Export and Plot in Python](https://www.youtube.com/watch?v=pQv6zMlYJ0A)
