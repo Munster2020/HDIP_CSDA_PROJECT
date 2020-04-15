@@ -57,3 +57,9 @@ The data set contains the following attibutes.
 [Stackoverflow: Python, Pandas : write content of DataFrame into text File](https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file)
 
 [Medium: Exploratory Data Analysis: Iris Flower Dataset](https://medium.com/analytics-vidhya/exploratory-data-analysis-iris-flower-dataset-a21c368a1f4)
+
+[Shane Lynn: Summarising, Aggregating, and Grouping data in Python Pandas](https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/)
+
+[Data to Fish: How to Import a CSV File into Python using Pandas](https://datatofish.com/import-csv-file-python-using-pandas/)
+
+[MIT Open Courseware: Iris Dataset](https://ocw.mit.edu/courses/sloan-school-of-management/15-097-prediction-machine-learning-and-statistics-spring-2012/datasets/)
