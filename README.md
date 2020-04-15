@@ -31,3 +31,13 @@ The data set contains the following attibutes.
    * Iris versicolour
     
    * Iris virginica
+### Sources
+[Code Academy: Seaborn Styling](https://www.codecademy.com/articles/seaborn-design-ii)
+
+[Medium: Basic Analysis of the Iris Data set Using Python](https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-using-python-2995618a6342)
+
+[Seaborn: Visualizing the distribution of a dataset](http://seaborn.pydata.org/tutorial/distributions.html)
+
+[University of Warwick: Plotting the Iris Data](https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/r/iris_plots/)
+
+[GeeksforGeeks: Box plot and Histogram exploration on Iris data](https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/)
