@@ -72,3 +72,7 @@ The data set contains the following attibutes.
 
 [Medium: Exploratory Data Analysis of IRIS Data Set Using Python](https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d)
 
+[Famous Scientists - The Art of Genius: Ronald Fisher](https://www.famousscientists.org/ronald-fisher/)
+
+[Technopedia: Iris Flower Data Set](https://www.techopedia.com/definition/32880/iris-flower-data-set)
+
