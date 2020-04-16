@@ -65,3 +65,10 @@ The data set contains the following attibutes.
 [MIT Open Courseware: Iris Dataset](https://ocw.mit.edu/courses/sloan-school-of-management/15-097-prediction-machine-learning-and-statistics-spring-2012/datasets/)
 
 [CodeSpeedy: Importing dataset using Pandas (Python deep learning library )](https://www.codespeedy.com/importing-dataset-using-pandas-python-deep-learning-library/)
+
+[University of Ljubljana: Classification of Iris data set)](http://lab.fs.uni-lj.si/lasin/wp/IMIT_files/neural/doc/seminar8.pdf)
+
+[WikiMili: Iris flower data set](https://wikimili.com/en/Iris_flower_data_set)
+
+[Medium: Exploratory Data Analysis of IRIS Data Set Using Python](https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d)
+
