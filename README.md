@@ -76,3 +76,6 @@ The data set contains the following attibutes.
 
 [Technopedia: Iris Flower Data Set](https://www.techopedia.com/definition/32880/iris-flower-data-set)
 
+[Real Python: Python Statistics Fundamentals: How to Describe Your Data](https://realpython.com/python-statistics/)
+
+[Chris Albon: Descriptive Statistics For pandas Dataframe](https://chrisalbon.com/python/data_wrangling/pandas_dataframe_descriptive_stats/)
