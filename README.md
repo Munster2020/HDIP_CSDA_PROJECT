@@ -35,6 +35,7 @@ The data set contains the following attributes.
    * Iris virginica
 
 ### Python Code
+### 1. Import modules
 The first section of my code imports modules required for the project.
 [Matplotlib](https://matplotlib.org/) is a library for creating static, animated or interactive visualisations while the [Pandas](https://pandas.pydata.org/) library provides ease of use data structures and analysis tools.
 [Seaborn](http://seaborn.pydata.org/) is a Python data visualization library which I used for creating statistical graphs.
@@ -46,16 +47,19 @@ import pandas as pd
 import seaborn as sns
 import sys
 ```
+### 2. Create dataframe
 Next I loaded the data using a pandas dataframe and created column headings. I sourced the dataset from the UCI Machine Learning Repository via [MITOpenCourseWare](https://ocw.mit.edu/courses/sloan-school-of-management/15-097-prediction-machine-learning-and-statistics-spring-2012/datasets/)
 ```python
 iris_df = pd.read_csv('iris.csv')
 iris_df = pd.DataFrame(data, columns = ['sepal length in cm', 'sepal width in cm', 
 'petal length in cm', 'petal width in cm', 'class'])
 ```
+### 3. Redirect to text file
 For this project we were asked to output our findings to a text file. In order to do this I used the below piece of code which uses the Sys module mentioned previously.
 ```python
 sys.stdout = open("iris_summary.txt", 'w')
 ```
+### 4. Data exploration
 Having obtained the data the next step was to perform some exploratory data analysis. Looking in more detail at the dataset attributes, classifications of Iris plant and datatypes. The code below confirmed a relatively small dataset with only 150 records (50 in each class) namely Iris Setosa, Iris Versicolour and Iris Virginica. There is four numeric predictive attributes (float64) and the class (object). There is no missing values. 
 ```python
 print('===============')
@@ -75,6 +79,7 @@ print('Information on the dataset')
 print('--------------------------')
 print(iris_df.info())
 ```
+### 5. Summary statistics 
 Next up was to examine the dataset using some of the built in functionality of Pandas. First I used describe() to generate some descriptive statistics of the numeric and non-numeric datatypes, focusing on the central tendency, dispersion and shape of the dataset distribution. I also looked in more detail at the median, mode and variance as well as correlation and covariance.
 ```python
 print ('===================================')
