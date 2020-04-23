@@ -52,7 +52,7 @@ iris_df = pd.read_csv('iris.csv')
 iris_df = pd.DataFrame(data, columns = ['sepal length in cm', 'sepal width in cm', 
 'petal length in cm', 'petal width in cm', 'class'])
 ```
-===========================
+For this project we were asked to output our findings to a text file. In order to do this I used the below piece of code which uses the Sys module mentioned previously.
 ```python
 sys.stdout = open("iris_summary.txt", 'w')
 ```
