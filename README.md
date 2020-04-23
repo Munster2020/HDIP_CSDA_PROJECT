@@ -46,9 +46,11 @@ import pandas as pd
 import seaborn as sns
 import sys
 ```
-===========================
+Next I loaded the data using a pandas dataframe and created column headings. I sourced the dataset from the UCI Machine Learning Repository via [MITOpenCourseWare](https://ocw.mit.edu/courses/sloan-school-of-management/15-097-prediction-machine-learning-and-statistics-spring-2012/datasets/)
 ```python
 iris_df = pd.read_csv('iris.csv')
+iris_df = pd.DataFrame(data, columns = ['sepal length in cm', 'sepal width in cm', 
+'petal length in cm', 'petal width in cm', 'class'])
 ```
 ===========================
 ```python
