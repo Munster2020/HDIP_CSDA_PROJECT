@@ -69,8 +69,34 @@ print('Information on the dataset')
 print('--------------------------')
 print(iris_df.info())
 ```
-
-
+===========================
+```python
+print ('==================================')
+print ('Statistical Summary of the dataset')
+print ('----------------------------------')
+print (iris_df.describe())
+print ('===============')
+print ('Dataset Median')
+print ('--------------')
+print (iris_df.median())
+print ('===============')
+print ('Dataset Mode')
+print ('--------------')
+print (iris_df.mode(numeric_only=True))
+print ('===============')
+print ('Dataset Variance')
+print ('--------------')
+print (iris_df.var())
+print ('====================================')
+print ('Dataset Correlation Matrix Of Values')
+print ('------------------------------------')
+print (iris_df.corr())
+print ('====================================')
+print ('Dataset Covariance Matrix Of Values')
+print ('------------------------------------')
+print (iris_df.cov())
+print ('===============')
+```
 ### Sources
 [Code Academy: Seaborn Styling](https://www.codecademy.com/articles/seaborn-design-ii)
 
