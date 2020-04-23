@@ -4,7 +4,9 @@
 
 
 ### Problem Statement
-This project deals with Fisher's Iris data set. For the project I had to research the data set and write documentation and code in Python to investigate it. The approach given was to break the project into several smaller tasks and then plug them together once completed.
+This project deals with Fisher's Iris data set. For the project I had to research the data set and write documentation and code in Python to investigate it.
+
+I used descriptive statistics to answer this problem. This method uses two approaches. Firstly using quantitative statistics to describe and summarise the data numerically and secondly use visual interpretation to illustrate the data with charts, plots and histograms.
 
 ![alt text](https://i1.wp.com/dataaspirant.com/wp-content/uploads/2017/01/irises.png?resize=600%2C181 "Iris Flowers")
 
