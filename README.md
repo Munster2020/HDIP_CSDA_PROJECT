@@ -75,7 +75,7 @@ print('Information on the dataset')
 print('--------------------------')
 print(iris_df.info())
 ```
-===========================
+Next up was to examine the dataset using some of the built in functionality of Pandas. First I used describe() to generate some descriptive statistics of the numeric and non-numeric datatypes, focusing on the central tendency, dispersion and shape of the dataset distribution. I also looked in more detail at the median, mode and variance as well as correlation and covariance.
 ```python
 print ('===================================')
 print ('Statistical Summary of numeric data')
