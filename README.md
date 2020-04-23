@@ -56,7 +56,7 @@ For this project we were asked to output our findings to a text file. In order t
 ```python
 sys.stdout = open("iris_summary.txt", 'w')
 ```
-===========================
+Having obtained the data the next step was to perform some exploratory data analysis. Looking in more detail at the dataset attributes, classifications of Iris plant and datatypes. The code below confirmed a relatively small dataset with only 150 records (50 in each class) namely Iris Setosa, Iris Versicolour and Iris Virginica. There is four numeric predictive attributes (float64) and the class (object). There is no missing values. 
 ```python
 print('===============')
 print('First Five Rows')
