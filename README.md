@@ -35,17 +35,12 @@ The data set contains the following attributes.
    * Iris virginica
 
 ### Python Code
-```import matplotlib.pyplot as plt
+```python
+import matplotlib.pyplot as plt
 import matplotlib.mlab as mlab
 import pandas as pd
 import seaborn as sns
 import sys
-```
-
-```iris_df = pd.read_csv('iris.csv')
-```
-
-```sys.stdout = open("iris_summary.txt", 'w')
 ```
 
 ### Sources
