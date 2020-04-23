@@ -35,6 +35,10 @@ The data set contains the following attributes.
    * Iris virginica
 
 ### Python Code
+The first section of my code imports modules required for the project.
+[Matplotlib](https://matplotlib.org/) is a library for creating static, animated or interactive visualisations while the [Pandas](https://pandas.pydata.org/) library provides ease of use data structures and analysis tools.
+[Seaborn](http://seaborn.pydata.org/) is a Python data visualization library which I used for creating statistical graphs.
+The [Sys](https://www.python-course.eu/sys_module.php) module provides a number of functions and variables that can be used to manipulate different parts of the Python runtime environment. I used it in this program to output to a .txt file.
 ```python
 import matplotlib.pyplot as plt
 import matplotlib.mlab as mlab
