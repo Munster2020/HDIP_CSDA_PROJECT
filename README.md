@@ -77,10 +77,14 @@ print(iris_df.info())
 ```
 ===========================
 ```python
-print ('==================================')
-print ('Statistical Summary of the dataset')
-print ('----------------------------------')
+print ('===================================')
+print ('Statistical Summary of numeric data')
+print ('-----------------------------------')
 print (iris_df.describe())
+print ('=======================================')
+print ('Statistical Summary of non-numeric data')
+print ('---------------------------------------')
+print (iris_df.describe(include=[object]))
 print ('===============')
 print ('Dataset Median')
 print ('--------------')
