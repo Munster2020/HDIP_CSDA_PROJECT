@@ -112,6 +112,8 @@ print ('------------------------------------')
 print (iris_df.cov())
 print ('===============')
 ```
+### 6. Visual interpretation
+
 ### Sources
 [Code Academy: Seaborn Styling](https://www.codecademy.com/articles/seaborn-design-ii)
 
