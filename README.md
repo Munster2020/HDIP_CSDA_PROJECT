@@ -116,6 +116,50 @@ print ('===============')
 After gathering some descriptions and summaries of the dataset the next section of code looks at interpreting the data visually.
 First I created histograms to look at each of the numeric attributes sepal length and width and petal length and width.
 
+```python
+a = 'sepal length in cm'
+b = 'sepal width in cm'
+c = 'petal length in cm'
+d = 'petal width in cm'
+e = 'class'
+
+# Creates a histogram of sepal length
+sns.set_style('darkgrid')
+sns.distplot(iris_df[a])
+plt.title('Histogram of Sepal Length')
+plt.xlabel('')
+plt.ylabel('Frequency')
+plt.savefig('histogram_of_sepal_length')
+plt.close()
+
+# Creates a histogram of sepal width
+sns.set_style('darkgrid')
+sns.distplot(iris_df[b])
+plt.title('Histogram of Sepal Width')
+plt.xlabel('')
+plt.ylabel('Frequency')
+plt.savefig('histogram_of_sepal_width')
+plt.close()
+
+# Creates a histogram of petal length
+sns.set_style('darkgrid')
+sns.distplot(iris_df[c])
+plt.title('Histogram of Petal Length')
+plt.xlabel('')
+plt.ylabel('Frequency')
+plt.savefig('histogram_of_petal_length')
+plt.close()
+
+# Creates a histogram of petal width
+sns.set_style('darkgrid')
+sns.distplot(iris_df[c])
+plt.title('Histogram of Petal Width')
+plt.xlabel('')
+plt.ylabel('Frequency')
+plt.savefig('histogram_of_petal_width')
+plt.close()
+```
+
 ![Histogram of Sepal Length](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_sepal_length.png)
 
 ![Histogram of Sepal Width](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_sepal_width.png)
