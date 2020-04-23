@@ -42,6 +42,34 @@ import pandas as pd
 import seaborn as sns
 import sys
 ```
+===========================
+```python
+iris_df = pd.read_csv('iris.csv')
+```
+===========================
+```python
+sys.stdout = open("iris_summary.txt", 'w')
+```
+===========================
+```python
+print('===============')
+print('First Five Rows')
+print('---------------')
+print(iris_df.head())
+print('===============')
+print('Last Five Rows')
+print('---------------')
+print(iris_df.tail())
+print('===============')
+print('Species of Iris')
+print('---------------')
+print(iris_df['class'].value_counts())
+print('===============')
+print('Information on the dataset')
+print('--------------------------')
+print(iris_df.info())
+```
+
 
 ### Sources
 [Code Academy: Seaborn Styling](https://www.codecademy.com/articles/seaborn-design-ii)
