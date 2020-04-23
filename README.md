@@ -113,7 +113,17 @@ print (iris_df.cov())
 print ('===============')
 ```
 ### 6. Visual interpretation
+After gathering some descriptions and summaries of the dataset the next section of code looks at interpreting the data visually.
+First I created histograms to look at each of the numeric attributes sepal length and width and petal length and width.
+
+![Histogram of Sepal Length](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_sepal_length.png)
+
+![Histogram of Sepal Width](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_sepal_width.png)
+
 ![Histogram of Petal Length](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_petal_length.png)
+
+![Histogram of Petal Width](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_petal_width.png)
+
 ### Sources
 [Code Academy: Seaborn Styling](https://www.codecademy.com/articles/seaborn-design-ii)
 
