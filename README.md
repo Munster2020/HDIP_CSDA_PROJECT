@@ -113,6 +113,7 @@ print (iris_df.cov())
 print ('===============')
 ```
 ### 6. Visual interpretation
+[logo] :https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_petal_length.png "Histogram of Petal Length"
 
 ### Sources
 [Code Academy: Seaborn Styling](https://www.codecademy.com/articles/seaborn-design-ii)
