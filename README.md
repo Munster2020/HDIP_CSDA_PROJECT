@@ -12,7 +12,7 @@ I used descriptive statistics to answer this problem. This method uses two appro
 
 
 ### Summary
-The Iris flower data set was compiled by Ronald Fisher in the 1930's. Fisher was born in London in 1890 and went on to become one of the most highly regarded statisticians of the 20th Century. He pioneered the application of statistical procedures to the dsign of scientific experiments. In tandem with his work in statistics he was also one of the principal founders of population eugenics. His work in biology led to the the geneticist and author Richard Dawkins calling him the greatest biologist since Charles Darwin.
+The Iris flower data set was compiled by Ronald Fisher in the 1930's. Fisher was born in London in 1890 and went on to become one of the most highly regarded statisticians of the 20th Century. He pioneered the application of statistical procedures to the design of scientific experiments. In tandem with his work in statistics he was also one of the principal founders of population eugenics. His work in biology led to the the geneticist and author Richard Dawkins calling him the greatest biologist since Charles Darwin.
 
 Fisher introduced the Iris Flower data set in a paper published in "The Annals of Human Genetics" in 1936 called "The Use of Multiple Measurements in Taxonomic Problems" as an example of linear discriminant analysis. The dataset cotains three classes of fifty instances each. Each class refers to a type of iris plant. Each class is linearly separable from the other two classes. The first two species Iris setosa and Iris versicolour, were found growing together in the same colony.The third species called Iris virginica was taken from a different colony.
 
@@ -35,7 +35,8 @@ The data set contains the following attributes.
    * Iris virginica
 
 ### Python Code
-The first section of my code imports modules required for the project.
+### 1. Import modules
+The first section of my code imports the modules I required for the project.
 [Matplotlib](https://matplotlib.org/) is a library for creating static, animated or interactive visualisations while the [Pandas](https://pandas.pydata.org/) library provides ease of use data structures and analysis tools.
 [Seaborn](http://seaborn.pydata.org/) is a Python data visualization library which I used for creating statistical graphs.
 The [Sys](https://www.python-course.eu/sys_module.php) module provides a number of functions and variables that can be used to manipulate different parts of the Python runtime environment. I used it in this program to output to a .txt file.
@@ -46,16 +47,19 @@ import pandas as pd
 import seaborn as sns
 import sys
 ```
+### 2. Create dataframe
 Next I loaded the data using a pandas dataframe and created column headings. I sourced the dataset from the UCI Machine Learning Repository via [MITOpenCourseWare](https://ocw.mit.edu/courses/sloan-school-of-management/15-097-prediction-machine-learning-and-statistics-spring-2012/datasets/)
 ```python
 iris_df = pd.read_csv('iris.csv')
 iris_df = pd.DataFrame(data, columns = ['sepal length in cm', 'sepal width in cm', 
 'petal length in cm', 'petal width in cm', 'class'])
 ```
+### 3. Redirect to text file
 For this project we were asked to output our findings to a text file. In order to do this I used the below piece of code which uses the Sys module mentioned previously.
 ```python
 sys.stdout = open("iris_summary.txt", 'w')
 ```
+### 4. Data exploration
 Having obtained the data the next step was to perform some exploratory data analysis. Looking in more detail at the dataset attributes, classifications of Iris plant and datatypes. The code below confirmed a relatively small dataset with only 150 records (50 in each class) namely Iris Setosa, Iris Versicolour and Iris Virginica. There is four numeric predictive attributes (float64) and the class (object). There is no missing values. 
 ```python
 print('===============')
@@ -75,6 +79,7 @@ print('Information on the dataset')
 print('--------------------------')
 print(iris_df.info())
 ```
+### 5. Summary statistics 
 Next up was to examine the dataset using some of the built in functionality of Pandas. First I used describe() to generate some descriptive statistics of the numeric and non-numeric datatypes, focusing on the central tendency, dispersion and shape of the dataset distribution. I also looked in more detail at the median, mode and variance as well as correlation and covariance.
 ```python
 print ('===================================')
@@ -107,6 +112,62 @@ print ('------------------------------------')
 print (iris_df.cov())
 print ('===============')
 ```
+### 6. Visual interpretation
+After gathering some descriptions and summaries of the dataset the next section of code looks at interpreting the data visually.
+First I created histograms to look at each of the numeric attributes sepal length and width and petal length and width.
+
+```python
+a = 'sepal length in cm'
+b = 'sepal width in cm'
+c = 'petal length in cm'
+d = 'petal width in cm'
+e = 'class'
+
+# Creates a histogram of sepal length
+sns.set_style('darkgrid')
+sns.distplot(iris_df[a])
+plt.title('Histogram of Sepal Length')
+plt.xlabel('')
+plt.ylabel('Frequency')
+plt.savefig('histogram_of_sepal_length')
+plt.close()
+
+# Creates a histogram of sepal width
+sns.set_style('darkgrid')
+sns.distplot(iris_df[b])
+plt.title('Histogram of Sepal Width')
+plt.xlabel('')
+plt.ylabel('Frequency')
+plt.savefig('histogram_of_sepal_width')
+plt.close()
+
+# Creates a histogram of petal length
+sns.set_style('darkgrid')
+sns.distplot(iris_df[c])
+plt.title('Histogram of Petal Length')
+plt.xlabel('')
+plt.ylabel('Frequency')
+plt.savefig('histogram_of_petal_length')
+plt.close()
+
+# Creates a histogram of petal width
+sns.set_style('darkgrid')
+sns.distplot(iris_df[c])
+plt.title('Histogram of Petal Width')
+plt.xlabel('')
+plt.ylabel('Frequency')
+plt.savefig('histogram_of_petal_width')
+plt.close()
+```
+
+![Histogram of Sepal Length](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_sepal_length.png)
+
+![Histogram of Sepal Width](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_sepal_width.png)
+
+![Histogram of Petal Length](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_petal_length.png)
+
+![Histogram of Petal Width](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_petal_width.png)
+
 ### Sources
 [Code Academy: Seaborn Styling](https://www.codecademy.com/articles/seaborn-design-ii)
 
