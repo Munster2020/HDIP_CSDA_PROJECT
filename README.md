@@ -199,7 +199,9 @@ plt.title('Scatter plot between petal length and petal width')
 plt.savefig('petal scatterplot')
 plt.close()
 ```
-![sepal scatterplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Iris%20Dataset%20Pairplot.png)
+![Sepal Scatterplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/sepal%20scatterplot.png)
+
+![Petal Scatterplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/petal%20scatterplot.png)
 
 ### Sources
 [Code Academy: Seaborn Styling](https://www.codecademy.com/articles/seaborn-design-ii)
