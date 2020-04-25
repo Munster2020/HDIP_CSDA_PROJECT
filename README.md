@@ -113,6 +113,7 @@ print (iris_df.cov())
 print ('===============')
 ```
 ### 6. Visual interpretation
+#### 6.1 Histograms
 After gathering some descriptions and summaries of the dataset the next section of code looks at interpreting the data visually.
 First I created histograms to look at each of the numeric attributes sepal length and width and petal length and width. Histograms provide a visual interpretation of numerical data by indicating the number of data points that lie within a range of values. These ranges of values are called classes or bins. The frequency of the data that falls in each class is depicted by the use of a bar. The higher that the bar is, the greater the frequency of data values in that bin.
 
@@ -164,7 +165,6 @@ plt.ylabel('Frequency')
 plt.savefig('histogram_of_petal_width')
 plt.close()
 ```
-
 ![Histogram of Sepal Length](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_sepal_length.png)
 
 ![Histogram of Sepal Width](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_sepal_width.png)
@@ -173,6 +173,15 @@ plt.close()
 
 ![Histogram of Petal Width](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_petal_width.png)
 
+#### 6.2 Pairplot
+```python
+# Create a pairplot of the dataset
+sns.set_style('darkgrid')
+sns.pairplot(iris_df, hue='class')
+plt.savefig('iris dataset pairplot')
+plt.close()
+```
+![Pairplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Iris Dataset Pairplot.png)
 ### Sources
 [Code Academy: Seaborn Styling](https://www.codecademy.com/articles/seaborn-design-ii)
 
