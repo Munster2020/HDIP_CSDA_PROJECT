@@ -114,7 +114,7 @@ print ('===============')
 ```
 ### 6. Visual interpretation
 After gathering some descriptions and summaries of the dataset the next section of code looks at interpreting the data visually.
-First I created histograms to look at each of the numeric attributes sepal length and width and petal length and width.
+First I created histograms to look at each of the numeric attributes sepal length and width and petal length and width. Histograms provide a visual interpretation of numerical data by indicating the number of data points that lie within a range of values. These ranges of values are called classes or bins. The frequency of the data that falls in each class is depicted by the use of a bar. The higher that the bar is, the greater the frequency of data values in that bin.
 
 ```python
 # The next stage of the project moves on to creating histograms and scatterplots
