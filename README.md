@@ -117,6 +117,7 @@ After gathering some descriptions and summaries of the dataset the next section 
 First I created histograms to look at each of the numeric attributes sepal length and width and petal length and width.
 
 ```python
+# The next stage of the project moves on to creating histograms and scatterplots
 a = 'sepal length in cm'
 b = 'sepal width in cm'
 c = 'petal length in cm'
@@ -125,6 +126,7 @@ e = 'class'
 
 # Creates a histogram of sepal length
 sns.set_style('darkgrid')
+plt.figure(figsize=(4.4,2.8))
 sns.distplot(iris_df[a])
 plt.title('Histogram of Sepal Length')
 plt.xlabel('')
@@ -134,6 +136,7 @@ plt.close()
 
 # Creates a histogram of sepal width
 sns.set_style('darkgrid')
+plt.figure(figsize=(4.4,2.8))
 sns.distplot(iris_df[b])
 plt.title('Histogram of Sepal Width')
 plt.xlabel('')
@@ -143,6 +146,7 @@ plt.close()
 
 # Creates a histogram of petal length
 sns.set_style('darkgrid')
+plt.figure(figsize=(4.4,2.8))
 sns.distplot(iris_df[c])
 plt.title('Histogram of Petal Length')
 plt.xlabel('')
@@ -152,6 +156,7 @@ plt.close()
 
 # Creates a histogram of petal width
 sns.set_style('darkgrid')
+plt.figure(figsize=(4.4,2.8))
 sns.distplot(iris_df[c])
 plt.title('Histogram of Petal Width')
 plt.xlabel('')
