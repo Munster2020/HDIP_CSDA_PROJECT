@@ -121,7 +121,6 @@ plt.close()
 # Create a pairplot of the dataset
 sns.set_style('darkgrid')
 sns.pairplot(iris_df, hue='class')
-plt.suptitle('Iris Dataset Pairplot', size=28)
 plt.savefig('iris dataset pairplot')
 plt.close()
 
@@ -140,7 +139,7 @@ plt.title('Scatter plot between petal length and petal width')
 plt.savefig('petal scatterplot')
 plt.close()
 
-
+# Create boxplot of the dataset
 iris_long = pd.melt(iris_df, id_vars='class')
 sns.set_style('darkgrid')
 sns.boxplot(x='class', y='value', hue='variable', data=iris_long)
