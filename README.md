@@ -181,7 +181,7 @@ sns.pairplot(iris_df, hue='class')
 plt.savefig('iris dataset pairplot')
 plt.close()
 ```
-![Pairplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Iris_Dataset_Pairplot.png)
+![Pairplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Iris%20Dataset%20Pairplot.png)
 ### Sources
 [Code Academy: Seaborn Styling](https://www.codecademy.com/articles/seaborn-design-ii)
 
