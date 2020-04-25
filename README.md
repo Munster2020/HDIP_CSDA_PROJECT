@@ -203,6 +203,17 @@ plt.close()
 
 ![Petal Scatterplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/petal%20scatterplot.png)
 
+#### 6.4 Boxplot
+```python
+iris_long = pd.melt(iris_df, id_vars='class')
+sns.set_style('darkgrid')
+sns.boxplot(x='class', y='value', hue='variable', data=iris_long)
+plt.title('Boxplot of Class Attributes')
+plt.savefig('class boxplot')
+plt.close()
+```
+![Boxplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/class%20boxplot.png)
+
 ### Sources
 [Code Academy: Seaborn Styling](https://www.codecademy.com/articles/seaborn-design-ii)
 
