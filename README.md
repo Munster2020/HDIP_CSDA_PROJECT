@@ -182,6 +182,25 @@ plt.savefig('iris dataset pairplot')
 plt.close()
 ```
 ![Pairplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Iris%20Dataset%20Pairplot.png)
+
+#### 6.3 Scatterplots of width and length for Sepal and Petal
+```python
+sns.set_style('darkgrid')
+sns.scatterplot(x='sepal length in cm', y='sepal width in cm',
+                data=iris_df, hue='class', style='class')
+plt.title('Scatter plot between sepal length and sepal width')
+plt.savefig('sepal scatterplot')
+plt.close()
+
+sns.set_style('darkgrid')
+sns.scatterplot(x='petal length in cm', y='petal width in cm',
+                data=iris_df, hue='class', style='class')
+plt.title('Scatter plot between petal length and petal width')
+plt.savefig('petal scatterplot')
+plt.close()
+```
+![sepal scatterplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Iris%20Dataset%20Pairplot.png)
+
 ### Sources
 [Code Academy: Seaborn Styling](https://www.codecademy.com/articles/seaborn-design-ii)
 
