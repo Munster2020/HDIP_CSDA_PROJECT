@@ -272,3 +272,7 @@ Prior to this project I had never used boxplots however they are quite easy to i
 [Real Python: Python Statistics Fundamentals: How to Describe Your Data](https://realpython.com/python-statistics/)
 
 [Chris Albon: Descriptive Statistics For pandas Dataframe](https://chrisalbon.com/python/data_wrangling/pandas_dataframe_descriptive_stats/)
+
+[Dummies: How to Interpret a Scatterplot](https://www.dummies.com/education/math/statistics/how-to-interpret-a-scatterplot/)
+
+[Intellspot: Bivariate Data: Examples, Definition and Analysis](http://intellspot.com/bivariate-data-examples/)
