@@ -204,7 +204,9 @@ plt.close()
 ![Petal Scatterplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/petal%20scatterplot.png)
 
 #### 6.4 Boxplot
+Boxplots are a convenient way at looking at individual features and a key tool in descriptive statistics. They are a standardised way of displaying the distribution of data based on a *''five number summary, minimum first quartile, median, third quartile and maximum''*. One of the advantages of the boxplot in comparison to say histograms as discussed previously or density plots, is that they take up less space and provide you with a concise overview of your data.
 ```python
+# Create boxplot of the dataset
 iris_long = pd.melt(iris_df, id_vars='class')
 sns.set_style('darkgrid')
 sns.boxplot(x='class', y='value', hue='variable', data=iris_long)
@@ -212,6 +214,8 @@ plt.title('Boxplot of Class Attributes')
 plt.savefig('class boxplot')
 plt.close()
 ```
+Prior to this project I had never used boxplots however they are quite easy to interpret. For instance lets look at the sepal length of Iris-virginica in the top right segment of the chart. The two vertical bars extending from the box capped with short horizontal lines show the maximum and minimum values excluding outliers. In this case the results are 7.92 cms and 5.62 cms. By the way the vertical lines are called whiskers simply because they resemble the whiskers or mustache of a cat. The black diamond shapes represent outliers i.e. values above or below the interquartile range. The top line of the box equates to the upper quartile, the bottom line the lower quartile and the intermediate line is the median.
+
 ![Boxplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/class%20boxplot.png)
 
 ### Sources
