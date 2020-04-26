@@ -6,15 +6,15 @@
 ### Problem Statement
 This project deals with Fisher's Iris data set. For the project I had to research the data set and write documentation and code in Python to investigate it.
 
-I used descriptive statistics to answer this problem. This method uses two approaches. Firstly using quantitative statistics to describe and summarise the data numerically and secondly use visual interpretation to illustrate the data with charts, plots and histograms.
+I used descriptive statistics to answer this problem. This method uses two approaches. Firstly, using quantitative statistics to describe and summarise the data numerically and secondly use visual interpretation to illustrate the data with charts, plots and histograms.
 
 ![alt text](https://i1.wp.com/dataaspirant.com/wp-content/uploads/2017/01/irises.png?resize=600%2C181 "Iris Flowers")
 
 
 ### Summary
-The Iris flower data set was compiled by Ronald Fisher in the 1930's. Fisher was born in London in 1890 and went on to become one of the most highly regarded statisticians of the 20th Century. He pioneered the application of statistical procedures to the design of scientific experiments. In tandem with his work in statistics he was also one of the principal founders of population eugenics. His work in biology led to the the geneticist and author Richard Dawkins calling him the greatest biologist since Charles Darwin.
+The Iris flower data set was compiled by Ronald Fisher in the 1930's. Fisher was born in London in 1890 and went on to become one of the most highly regarded statisticians of the 20th Century. He pioneered the application of statistical procedures to the design of scientific experiments. In tandem with his work in statistics he was also one of the principal founders of population eugenics. His work in biology led to the geneticist and author Richard Dawkins calling him the greatest biologist since Charles Darwin.
 
-Fisher introduced the Iris Flower data set in a paper published in "The Annals of Human Genetics" in 1936 called "The Use of Multiple Measurements in Taxonomic Problems" as an example of linear discriminant analysis. The dataset cotains three classes of fifty instances each. Each class refers to a type of iris plant. Each class is linearly separable from the other two classes. The first two species Iris setosa and Iris versicolour, were found growing together in the same colony.The third species called Iris virginica was taken from a different colony.
+Fisher introduced the Iris Flower data set in a paper published in "The Annals of Human Genetics" in 1936 called "The Use of Multiple Measurements in Taxonomic Problems" as an example of linear discriminant analysis. The dataset contains three classes of fifty instances each. Each class refers to a type of iris plant. Each class is linearly separable from the other two classes. The first two species Iris setosa and Iris versicolour, were found growing together in the same colony. The third species called Iris virginica was taken from a different colony.
 
 The data set contains the following attributes.
 
@@ -55,12 +55,12 @@ iris_df = pd.DataFrame(data, columns = ['sepal length in cm', 'sepal width in cm
 'petal length in cm', 'petal width in cm', 'class'])
 ```
 ### 3. Redirect to text file
-For this project we were asked to output our findings to a text file. In order to do this I used the below piece of code which uses the Sys module mentioned previously.
+For this project we were asked to output our findings to a text file. In order to do this, I used the below piece of code which uses the Sys module mentioned previously.
 ```python
 sys.stdout = open("iris_summary.txt", 'w')
 ```
 ### 4. Data exploration
-Having obtained the data the next step was to perform some exploratory data analysis. Looking in more detail at the dataset attributes, classifications of Iris plant and datatypes. The code below confirmed a relatively small dataset with only 150 records (50 in each class) namely Iris Setosa, Iris Versicolour and Iris Virginica. There is four numeric predictive attributes (float64) and the class (object). There is no missing values. 
+Having obtained the data, the next step was to perform some exploratory data analysis. Looking in more detail at the dataset attributes, classifications of Iris plant and datatypes. The code below confirmed a relatively small dataset with only 150 records (50 in each class) namely Iris Setosa, Iris Versicolour and Iris Virginica. There is four numeric predictive attributes (float64) and the class (object). There are no missing values. 
 ```python
 print('===============')
 print('First Five Rows')
@@ -80,7 +80,7 @@ print('--------------------------')
 print(iris_df.info())
 ```
 ### 5. Summary statistics 
-Next up was to examine the dataset using some of the built in functionality of Pandas. First I used describe() to generate some descriptive statistics of the numeric and non-numeric datatypes, focusing on the central tendency, dispersion and shape of the dataset distribution. I also looked in more detail at the median, mode and variance as well as correlation and covariance.
+Next up was to examine the dataset using some of the built-in functionality of Pandas. First, I used describe() to generate some descriptive statistics of the numeric and non-numeric datatypes, focusing on the central tendency, dispersion and shape of the dataset distribution. I also looked in more detail at the median, mode and variance as well as correlation and covariance.
 ```python
 print ('===================================')
 print ('Statistical Summary of numeric data')
@@ -115,7 +115,7 @@ print ('===============')
 ### 6. Visual interpretation
 #### 6.1 Histograms
 After gathering some descriptions and summaries of the dataset the next section of code looks at interpreting the data visually.
-First I created histograms to look at each of the numeric attributes sepal length and width and petal length and width. Histograms provide a visual interpretation of numerical data by indicating the number of data points that lie within a range of values. These ranges of values are called classes or bins. The frequency of the data that falls in each class is depicted by the use of a bar. The higher that the bar is, the greater the frequency of data values in that bin.
+First, I created histograms to look at each of the numeric attributes’ sepal length and width and petal length and width. Histograms provide a visual interpretation of numerical data by indicating the number of data points that lie within a range of values. These ranges of values are called classes or bins. The frequency of the data that falls in each class is depicted by the use of a bar. The higher that the bar is, the greater the frequency of data values in that bin.
 
 ```python
 # The next stage of the project moves on to creating histograms and scatterplots
@@ -200,6 +200,7 @@ From looking at the scatterplots below it looks like there is a positive relatio
 ![Petal Scatterplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/petal%20scatterplot.png)
 
 #### 6.3 Pairplot
+Another way of interpreting the dataset is to combine the above histograms and scatterplots which also means less coding which is one of the great features of Python by combining them in a pairplot. However, I changed the histograms to density plots on the diagonal to make it easier to compare distributions between the iris species than stacked bars. In the pairplot below, the density plots on the diagonal allow you to see distribution of a single variable while the scatterplots on the upper and lower triangles show the relationship (or lack of) between two variables. 
 ```python
 # Create a pairplot of the dataset
 sns.set_style('darkgrid')
@@ -207,6 +208,22 @@ sns.pairplot(iris_df, hue='class')
 plt.savefig('iris dataset pairplot')
 plt.close()
 ```
+We know from our dataset that it contains four numeric attributes, sepal length and width and petal length and width. *''This means  we have 4C2 plots (shorthand for for the binomial coefficient with parameters 4 and 2). The number of unique ways in which we can choose 2 objects out of a set of 4 objects"*. Therefore, our pairs are:
+
+(1) sepal_length, sepal_width
+
+(2) sepal_length, petal_length
+
+(3) sepal_length, petal_width
+
+(4) sepal_width, petal_length
+
+(5) sepal_width, petal_width
+
+(6) petal_length, petal_width)
+
+From the distributions below petal length is separating the iris setosa from the remaining.
+
 ![Pairplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Iris%20Dataset%20Pairplot.png)
 
 
@@ -221,7 +238,7 @@ plt.title('Boxplot of Class Attributes')
 plt.savefig('class boxplot')
 plt.close()
 ```
-Prior to this project I had never used boxplots however they are quite easy to interpret. For instance lets look at the sepal length of Iris-virginica in the top right segment of the chart. The two vertical bars extending from the box capped with short horizontal lines show the maximum and minimum values excluding outliers. In this case the results are 7.92 cms and 5.62 cms. By the way the vertical lines are called whiskers simply because they resemble the whiskers or mustache of a cat. The black diamond shapes represent outliers i.e. values above or below the interquartile range. The top line of the box equates to the upper quartile, the bottom line the lower quartile and the intermediate line is the median.
+Prior to this project I had never used boxplots however they are quite easy to interpret. For instance lets look at the sepal length of Iris-virginica in the top right segment of the chart. The two vertical bars extending from the box capped with short horizontal lines show the maximum and minimum values excluding outliers. In this case the results are 7.92 cms and 5.62 cms. By the way the vertical lines are called whiskers simply because they resemble the whiskers or moustache of a cat. The black diamond shapes represent outliers i.e. values above or below the interquartile range. The top line of the box equates to the upper quartile, the bottom line the lower quartile and the intermediate line is the median.
 
 ![Boxplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/class%20boxplot.png)
 
@@ -277,3 +294,4 @@ Prior to this project I had never used boxplots however they are quite easy to i
 [Dummies: How to Interpret a Scatterplot](https://www.dummies.com/education/math/statistics/how-to-interpret-a-scatterplot/)
 
 [Intellspot: Bivariate Data: Examples, Definition and Analysis](http://intellspot.com/bivariate-data-examples/)
+
