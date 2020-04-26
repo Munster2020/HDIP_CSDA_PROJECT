@@ -212,15 +212,15 @@ We know from our dataset that it contains four numeric attributes, sepal length 
 
 (1) sepal_length, sepal_width
 
-(2) sepal_length, petal_length
+(2) sepal length, petal length
 
-(3) sepal_length, petal_width
+(3) sepal length, petal width
 
-(4) sepal_width, petal_length
+(4) sepal width, petal length
 
-(5) sepal_width, petal_width
+(5) sepal width, petal width
 
-(6) petal_length, petal_width)
+(6) petal length, petal width)
 
 From the distributions below petal length is separating the iris setosa from the remaining.
 
