@@ -184,7 +184,9 @@ plt.close()
 ![Pairplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Iris%20Dataset%20Pairplot.png)
 
 #### 6.3 Scatterplots of width and length for Sepal and Petal
+Scatterplots are often used in bivariate analysis as they are very good at visualising and identiying correlations or lack there of. Across their two dimesions scatterplots use dots  representing the values obtained for two different variables. In this project I compared sepal length and sepal width and petal length and petal width. I also used class so I could compare these variables across the different iris flower species.
 ```python
+# Create scatterplots of the dataset
 sns.set_style('darkgrid')
 sns.scatterplot(x='sepal length in cm', y='sepal width in cm',
                 data=iris_df, hue='class', style='class')
@@ -199,6 +201,10 @@ plt.title('Scatter plot between petal length and petal width')
 plt.savefig('petal scatterplot')
 plt.close()
 ```
+In scatterplots you interpet the data by looking for trends in the data as you go from left to right. *''If the data show an uphill pattern as you move from left to right, this indicates a positive relationship between X and Y. As the X-values increase (move right), the Y-values tend to increase (move up).''* If the *''data show a downhill pattern as you move from left to right, this indicates a negative relationship between X and Y. As the X-values increase (move right) the Y-values tend to decrease (move down).''* and finally if the data *''don’t seem to resemble any kind of pattern (even a vague one), then no relationship exists between X and Y.''*
+
+From looking at the scatterplots below it looks like there is a positive relationship between petal length and petal width however in the case of sepal length and sepal width while still positive it is weaker.
+
 ![Sepal Scatterplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/sepal%20scatterplot.png)
 
 ![Petal Scatterplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/petal%20scatterplot.png)
