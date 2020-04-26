@@ -295,3 +295,6 @@ Prior to this project I had never used boxplots however they are quite easy to i
 
 [Intellspot: Bivariate Data: Examples, Definition and Analysis](http://intellspot.com/bivariate-data-examples/)
 
+[Foundations of AI & ML: Pairplots](https://mylearningsinaiml.wordpress.com/2018/11/21/pair-plots/)
+
+[Medium: Visualizing Data with Pairs Plots in Python](https://towardsdatascience.com/visualizing-data-with-pair-plots-in-python-f228cf529166)
