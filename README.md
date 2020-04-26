@@ -173,17 +173,7 @@ plt.close()
 
 ![Histogram of Petal Width](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_petal_width.png)
 
-#### 6.2 Pairplot
-```python
-# Create a pairplot of the dataset
-sns.set_style('darkgrid')
-sns.pairplot(iris_df, hue='class')
-plt.savefig('iris dataset pairplot')
-plt.close()
-```
-![Pairplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Iris%20Dataset%20Pairplot.png)
-
-#### 6.3 Scatterplots of width and length for Sepal and Petal
+#### 6.2 Scatterplots of width and length for Sepal and Petal
 Scatterplots are often used in bivariate analysis as they are very good at visualising and identiying correlations or lack there of. Across their two dimesions scatterplots use dots  representing the values obtained for two different variables. In this project I compared sepal length and sepal width and petal length and petal width. I also used class so I could compare these variables across the different iris flower species.
 ```python
 # Create scatterplots of the dataset
@@ -208,6 +198,17 @@ From looking at the scatterplots below it looks like there is a positive relatio
 ![Sepal Scatterplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/sepal%20scatterplot.png)
 
 ![Petal Scatterplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/petal%20scatterplot.png)
+
+#### 6.3 Pairplot
+```python
+# Create a pairplot of the dataset
+sns.set_style('darkgrid')
+sns.pairplot(iris_df, hue='class')
+plt.savefig('iris dataset pairplot')
+plt.close()
+```
+![Pairplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Iris%20Dataset%20Pairplot.png)
+
 
 #### 6.4 Boxplot
 Boxplots are a convenient way at looking at individual features and a key tool in descriptive statistics. They are a standardised way of displaying the distribution of data based on a *''five number summary, minimum first quartile, median, third quartile and maximum''*. One of the advantages of the boxplot in comparison to say histograms as discussed previously or density plots, is that they take up less space and provide you with a concise overview of your data.
