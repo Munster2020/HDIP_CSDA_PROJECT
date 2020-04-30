@@ -112,7 +112,7 @@ plt.close()
 # Creates a histogram of petal width
 sns.set_style('darkgrid')
 plt.figure(figsize=(4.4,2.8))
-sns.distplot(iris_df[c])
+sns.distplot(iris_df[d])
 plt.title('Histogram of Petal Width')
 plt.xlabel('')
 plt.ylabel('Frequency')
