@@ -61,15 +61,46 @@ sys.stdout = open("iris_summary.txt", 'w')
 ```
 ### 4. Data exploration
 Having obtained the data, the next step was to perform some exploratory data analysis. Looking in more detail at the dataset attributes, classifications of Iris plant and datatypes. The code below confirmed a relatively small dataset with only 150 records (50 in each class) namely Iris Setosa, Iris Versicolour and Iris Virginica. There is four numeric predictive attributes (float64) and the class (object). There are no missing values. 
+#### 4.1 pandas.DataFrame.head
+[DataFrame.head](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html) This function returns the first n rows for the object based on position. It is useful for quickly testing if your object has the right type of data in it.
 ```python
 print('===============')
 print('First Five Rows')
 print('---------------')
 print(iris_df.head())
+```
+```
+===============
+First Five Rows
+---------------
+   sepal length in cm  sepal width in cm  petal length in cm  petal width in cm        class
+0                 5.1                3.5                 1.4                0.2  Iris-setosa
+1                 4.9                3.0                 1.4                0.2  Iris-setosa
+2                 4.7                3.2                 1.3                0.2  Iris-setosa
+3                 4.6                3.1                 1.5                0.2  Iris-setosa
+4                 5.0                3.6                 1.4                0.2  Iris-setosa
+```
+#### 4.2 pandas.DataFrame.tail
+[DataFrame.tail](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html) This function returns last n rows from the object based on position. It is useful for quickly verifying data, for example, after sorting or appending rows.
+
+```python
 print('===============')
 print('Last Five Rows')
 print('---------------')
 print(iris_df.tail())
+```
+```
+===============
+Last Five Rows
+---------------
+     sepal length in cm  sepal width in cm  petal length in cm  petal width in cm           class
+145                 6.7                3.0                 5.2                2.3  Iris-virginica
+146                 6.3                2.5                 5.0                1.9  Iris-virginica
+147                 6.5                3.0                 5.2                2.0  Iris-virginica
+148                 6.2                3.4                 5.4                2.3  Iris-virginica
+149                 5.9                3.0                 5.1                1.8  Iris-virginica
+```
+```python
 print('===============')
 print('Species of Iris')
 print('---------------')
