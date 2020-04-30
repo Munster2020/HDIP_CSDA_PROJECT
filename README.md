@@ -188,12 +188,23 @@ sepal width in cm            -0.109369           1.000000           -0.420516   
 petal length in cm            0.871754          -0.420516            1.000000           0.962757
 petal width in cm             0.817954          -0.356544            0.962757           1.000000
 ```
+#### 5.6 pandas.DataFrame.cov
+[DataFrame.cov](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.cov.html) computes the pairwise covariance among the series of a DataFrame. The returned data frame is the covariance matrix of the columns of the DataFrame.
 ```python
 print ('====================================')
 print ('Dataset Covariance Matrix Of Values')
 print ('------------------------------------')
 print (iris_df.cov())
-print ('===============')
+```
+```
+====================================
+Dataset Covariance Matrix Of Values
+------------------------------------
+                    sepal length in cm  sepal width in cm  petal length in cm  petal width in cm
+sepal length in cm            0.685694          -0.039268            1.273682           0.516904
+sepal width in cm            -0.039268           0.188004           -0.321713          -0.117981
+petal length in cm            1.273682          -0.321713            3.113179           1.296387
+petal width in cm             0.516904          -0.117981            1.296387           0.582414
 ```
 ### 6. Visual interpretation
 #### 6.1 Histograms
