@@ -47,6 +47,7 @@ import pandas as pd
 import seaborn as sns
 import sys
 ```
+---
 ### 2. Create dataframe
 Next I loaded the data using a pandas dataframe and created column headings. I sourced the dataset from the UCI Machine Learning Repository via [MITOpenCourseWare](https://ocw.mit.edu/courses/sloan-school-of-management/15-097-prediction-machine-learning-and-statistics-spring-2012/datasets/)
 ```python
@@ -54,11 +55,13 @@ iris_df = pd.read_csv('iris.csv')
 iris_df = pd.DataFrame(data, columns = ['sepal length in cm', 'sepal width in cm', 
 'petal length in cm', 'petal width in cm', 'class'])
 ```
+---
 ### 3. Redirect to text file
 For this project we were asked to output our findings to a text file. In order to do this, I used the below piece of code which uses the Sys module mentioned previously.
 ```python
 sys.stdout = open("iris_summary.txt", 'w')
 ```
+---
 ### 4. Data exploration
 Having obtained the data, the next step was to perform some exploratory data analysis. Looking in more detail at the dataset attributes, classifications of Iris plant and datatypes. The code below confirmed a relatively small dataset with only 150 records (50 in each class) namely Iris Setosa, Iris Versicolour and Iris Virginica. There is four numeric predictive attributes (float64) and the class (object). There are no missing values. 
 #### 4.1 pandas.DataFrame.head
@@ -143,6 +146,7 @@ dtypes: float64(4), object(1)
 memory usage: 6.0+ KB
 None
 ```
+---
 ### 5. Summary statistics 
 Next up was to examine the dataset using some of the built-in functionality of Pandas. First, I used describe() to generate some descriptive statistics of the numeric and non-numeric datatypes, focusing on the central tendency, dispersion and shape of the dataset distribution. I also looked in more detail at the median, mode and variance as well as correlation and covariance.
 
@@ -271,6 +275,7 @@ sepal width in cm            -0.039268           0.188004           -0.321713   
 petal length in cm            1.273682          -0.321713            3.113179           1.296387
 petal width in cm             0.516904          -0.117981            1.296387           0.582414
 ```
+---
 ### 6. Visual interpretation
 #### 6.1 Histograms
 After gathering some descriptions and summaries of the dataset the next section of code looks at interpreting the data visually.
