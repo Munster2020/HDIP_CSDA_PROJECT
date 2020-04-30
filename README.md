@@ -89,8 +89,11 @@ print ('===================================')
 print ('Statistical Summary of numeric data')
 print ('-----------------------------------')
 print (iris_df.describe())
+print('=======================================')
+print('Statistical Summary of non-numeric data')
+print('---------------------------------------')
+print(iris_df.describe(include=[object]))
 ```
-
 ```
 ===================================
 Statistical Summary of numeric data
@@ -104,16 +107,39 @@ min              4.300000           2.000000            1.000000           0.100
 50%              5.800000           3.000000            4.350000           1.300000
 75%              6.400000           3.300000            5.100000           1.800000
 max              7.900000           4.400000            6.900000           2.500000
+
+=======================================
+Statistical Summary of non-numeric data
+---------------------------------------
+              class
+count           150
+unique            3
+top     Iris-setosa
+freq             50
+
 ```
+#### 5.2 pandas.DataFrame.median
+[DataFrame.median](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.median.html) returns the median of the values for the requested axis.
 ```python
-print ('=======================================')
-print ('Statistical Summary of non-numeric data')
-print ('---------------------------------------')
-print (iris_df.describe(include=[object]))
 print ('===============')
 print ('Dataset Median')
 print ('--------------')
 print (iris_df.median())
+```
+```
+===============
+Dataset Median
+---------------
+sepal length in cm    5.80
+sepal width in cm     3.00
+petal length in cm    4.35
+petal width in cm     1.30
+dtype: float64
+```
+
+
+
+```
 print ('===============')
 print ('Dataset Mode')
 print ('--------------')
