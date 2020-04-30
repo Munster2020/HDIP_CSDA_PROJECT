@@ -152,13 +152,25 @@ Dataset Mode
    sepal length in cm  sepal width in cm  petal length in cm  petal width in cm
 0                 5.0                3.0                 1.5                0.2
 ```
-
-
+#### 5.4 pandas.DataFrame.var
+[DataFrame.var](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.var.html) returns unbiased variance over requested axis.
 ```python
 print ('===============')
 print ('Dataset Variance')
 print ('--------------')
 print (iris_df.var())
+```
+```
+===============
+Dataset Variance
+--------------
+sepal length in cm    0.685694
+sepal width in cm     0.188004
+petal length in cm    3.113179
+petal width in cm     0.582414
+dtype: float64
+```
+```python
 print ('====================================')
 print ('Dataset Correlation Matrix Of Values')
 print ('------------------------------------')
