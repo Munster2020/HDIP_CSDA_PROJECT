@@ -1,6 +1,6 @@
 ![GMIT Logo](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/GMIT_Logo.jpg)
 ## Higher Diploma in Science in Computing (Data Analytics)
-### Programming and Scripting (COMP08049) 
+### Programme Module: Programming and Scripting (COMP08049) 
 ### Project 2020 – Fisher’s Iris Data Set
 ![Repository Word Clod](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Header.PNG)
 ### Problem Statement
