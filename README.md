@@ -330,6 +330,7 @@ plt.ylabel('Frequency')
 plt.savefig('histogram_of_petal_width')
 plt.close()
 ```
+
 ![Histogram of Sepal Length](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_sepal_length.png)
 
 ![Histogram of Sepal Width](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_sepal_width.png)
