@@ -20,6 +20,7 @@ iris_df = pd.DataFrame(data, columns=[
                        'sepal length in cm', 'sepal width in cm', 'petal length in cm', 'petal width in cm', 'class'])
 
 # Output a summary of the dataset and each variable to text file called "Summary"
+
 sys.stdout = open("iris_summary.txt", 'w')
 
 # This section explores the dataset
@@ -28,7 +29,7 @@ print('First Five Rows')
 print('---------------')
 print(iris_df.head())
 print('===============')
-print('Last Five Rows')
+print('Last Five Rows')          
 print('---------------')
 print(iris_df.tail())
 print('===============')
