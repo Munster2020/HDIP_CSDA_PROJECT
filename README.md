@@ -189,7 +189,7 @@ freq             50
 
 ```
 #### 5.2 pandas.DataFrame.median
-[DataFrame.median](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.median.html) returns the median of the values for the requested axis.
+The [DataFrame.median](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.median.html) returns the median of the values for the requested axis in this case the four numeric attributes. 
 ```python
 print ('===============')
 print ('Dataset Median')
