@@ -9,8 +9,6 @@ This project deals with Fisher's Iris data set. For the project I had to researc
 I used descriptive statistics to answer this problem. This method uses two approaches. Firstly, using quantitative statistics to describe and summarise the data numerically and secondly use visual interpretation to illustrate the data with charts, plots and histograms.
 
 ![Word Cloud](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Header.PNG)
-![alt text](https://i1.wp.com/dataaspirant.com/wp-content/uploads/2017/01/irises.png?resize=600%2C181 "Iris Flowers")
-
 
 ### Summary
 The Iris flower data set was compiled by Ronald Fisher in the 1930's. Fisher was born in London in 1890 and went on to become one of the most highly regarded statisticians of the 20th Century. He pioneered the application of statistical procedures to the design of scientific experiments. In tandem with his work in statistics he was also one of the principal founders of population eugenics. His work in biology led to the geneticist and author Richard Dawkins calling him the greatest biologist since Charles Darwin.
