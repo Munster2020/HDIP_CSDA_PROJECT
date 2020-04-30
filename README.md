@@ -31,7 +31,13 @@ The data set contains the following attributes.
    * Iris versicolour
     
    * Iris virginica
-   
+
+![Visual Studio Code](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Visual%20Studio%20Code.png "Visual Studio Code")
+
+![Anacondas](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Anaconda.png "Anacondas")
+
+![Cmder|Console Emulator](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/cmdr.png "Cmder")
+  
 ### Python Code
 ### 1. Import modules
 The first section of my code imports the modules I required for the project.
