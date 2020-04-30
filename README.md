@@ -72,6 +72,7 @@ print('First Five Rows')
 print('---------------')
 print(iris_df.head())
 ```
+The head function with no arguments gets the first five rows of data.
 ```
 ===============
 First Five Rows
@@ -92,6 +93,7 @@ print('Last Five Rows')
 print('---------------')
 print(iris_df.tail())
 ```
+The tail function with no arguments gets the last five rows of data.
 ```
 ===============
 Last Five Rows
@@ -386,7 +388,7 @@ We know from our dataset that it contains four numeric attributes, sepal length 
 
 (6) petal length, petal width)
 
-From the distributions below petal length is separating the iris setosa from the remaining.
+From the distributions below petal length is separating the iris setosa from the remaining. Therfore if you wanted to know if an Iris was Iris setosa or not, you would only need to know if the petal length was <2.  *''In terms of information theory, that fact has a high information entropy – meaning, it gives us a lot more insight about the dataset.''* [Lai.Nelson: Analysis of the famous Iris Flower dataset (Part 1)](https://wnellie.tumblr.com/post/143155937907/analysis-of-the-famous-iris-flower-dataset-part)
 
 ![Pairplot](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Iris%20Dataset%20Pairplot.png)
 
