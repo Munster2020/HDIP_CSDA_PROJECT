@@ -125,6 +125,7 @@ print('Information on the dataset')
 print('--------------------------')
 print(iris_df.info())
 ```
+This block of code generates the results below. From this we can tell that no data points are missing in any attribute. That the first four attributes are of float64 type and the indexes are in the range 0-149 for 150 records. (Used by Pandas.) The last column is an object type used in class labels. 6KB's of memory is used by the datset. [Kumar.P: Exploratory Data Analysis: Iris Flower Dataset](https://medium.com/analytics-vidhya/exploratory-data-analysis-iris-flower-dataset-a21c368a1f4)
 ```
 ==========================
 Information on the dataset
