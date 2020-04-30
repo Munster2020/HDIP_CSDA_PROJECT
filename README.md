@@ -8,6 +8,7 @@ This project deals with Fisher's Iris data set. For the project I had to researc
 
 I used descriptive statistics to answer this problem. This method uses two approaches. Firstly, using quantitative statistics to describe and summarise the data numerically and secondly use visual interpretation to illustrate the data with charts, plots and histograms.
 
+![Word Cloud](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Header.PNG)
 ![alt text](https://i1.wp.com/dataaspirant.com/wp-content/uploads/2017/01/irises.png?resize=600%2C181 "Iris Flowers")
 
 
