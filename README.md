@@ -32,11 +32,13 @@ The data set contains the following attributes.
     
    * Iris virginica
 
-![Visual Studio Code](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Visual%20Studio%20Code.png "Visual Studio Code")
+![logo](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Visual%20Studio%20Code.png "Visual Studio Code")  ![Visual Studio Code](https://code.visualstudio.com/)
 
-![Anacondas](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Anaconda.png "Anacondas")
+![logo](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Anaconda.png "Anacondas")
+![Anacondas](https://www.anaconda.com/)
 
-![Cmder|Console Emulator](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/cmdr.png "Cmder")
+![logo](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/cmdr.png "Cmder")
+![Cmdr](https://cmder.net/)
   
 ### Python Code
 ### 1. Import modules
