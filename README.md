@@ -32,6 +32,9 @@ The data set contains the following attributes.
     
    * Iris virginica
 
+### Software
+Below is a list of the software I used for the project.
+
 ![logo](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Visual%20Studio%20Code.png "Visual Studio Code")  ![Visual Studio Code](https://code.visualstudio.com/)
 
 ![logo](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Anaconda.png "Anacondas")
