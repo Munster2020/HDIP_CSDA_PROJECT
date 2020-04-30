@@ -330,7 +330,7 @@ plt.ylabel('Frequency')
 plt.savefig('histogram_of_petal_width')
 plt.close()
 ```
-One of the key elements when analysing a histogram is it's shape. The number of peaks in the histogram determines whether it is classed as Unimodal, Bimodal or Multimodal. They can be further classified by looking at their symmetry [Murphy.P :Introductory Statistics for Science, Social Science, Business & Medicine](http://www.ucd.ie/statdept/classpages/stat_10010.html). From the histograms generated using the code above it's apparent that sepal width is symmetrical. This is evidenced by the descriptive statistics we carried out earlier. This showed that sepal width has a mean of 3.05, a median of 3.00 and a mode of 3.00. See 6.1.3 Histogram of Sepal Width.
+One of the key elements when analysing a histogram is it's shape. The number of peaks in the histogram determines whether it is classed as Unimodal, Bimodal or Multimodal. They can be further classified by looking at their symmetry [Murphy.P :Introductory Statistics for Science, Social Science, Business & Medicine](http://www.ucd.ie/statdept/classpages/stat_10010.html). From the histograms generated using the code above it's apparent that sepal width is symmetrical. This is evidenced by the descriptive statistics we carried out earlier. This showed that sepal width has a mean of 3.05, a median of 3.00 and a mode of 3.00. See 6.1.2 Histogram of Sepal Width.
 
 ##### 6.1.1 Histogram of Sepal Length
 ![Histogram of Sepal Length](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/histogram_of_sepal_length.png)
