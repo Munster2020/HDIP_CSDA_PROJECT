@@ -156,6 +156,7 @@ print('Statistical Summary of non-numeric data')
 print('---------------------------------------')
 print(iris_df.describe(include=[object]))
 ```
+From the analysis generated below it is possible to observe that petal length with a mean value of 3.758667, the variance (spread of distribution) is large at 3.113179. See 5.4 below. This would help explain why our scatterplot of petal length and width are well defined with little overlap between the three species See 6.2. [Hoey, Patrick.S: Statistical Analysis of the Iris Flower Dataset](http://patrickhoey.com/downloads/Computer_Science/03_Patrick_Hoey_Data_Visualization_Dataset_paper.pdf)
 ```
 ===================================
 Statistical Summary of numeric data
