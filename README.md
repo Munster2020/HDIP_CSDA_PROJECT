@@ -101,13 +101,14 @@ Last Five Rows
 149                 5.9                3.0                 5.1                1.8  Iris-virginica
 ```
 #### 4.3 pandas.DataFrame.value_counts
-[DataFrame.value_counts](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html) returns the object in descending order so that the first element is the most frequently-occurring element. Excludes NA values by default.
+The [DataFrame.value_counts](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html) returns the object in descending order so that the first element is the most frequently-occurring element. Excludes NA values by default.
 ```python
 print('===============')
 print('Species of Iris')
 print('---------------')
 print(iris_df['class'].value_counts())
 ```
+This code shows that all three classes are disributed equally in terms of numbers and indicates a balanced dataset. 
 ```
 ===============
 Species of Iris
