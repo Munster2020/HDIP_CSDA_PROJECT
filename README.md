@@ -100,15 +100,46 @@ Last Five Rows
 148                 6.2                3.4                 5.4                2.3  Iris-virginica
 149                 5.9                3.0                 5.1                1.8  Iris-virginica
 ```
+#### 4.3 pandas.DataFrame.value_counts
+[DataFrame.value_counts](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html) returns the object in descending order so that the first element is the most frequently-occurring element. Excludes NA values by default.
 ```python
 print('===============')
 print('Species of Iris')
 print('---------------')
 print(iris_df['class'].value_counts())
+```
+```
+===============
+Species of Iris
+---------------
+Iris-setosa        50
+Iris-virginica     50
+Iris-versicolor    50
+Name: class, dtype: int64
+```
+#### 4.4 pandas.DataFrame.info
+[DataFrame.info](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.info.html) prints information about a DataFrame including the index dtype and column dtypes, non-null values and memory usage.
+```python
 print('===============')
 print('Information on the dataset')
 print('--------------------------')
 print(iris_df.info())
+```
+```
+==========================
+Information on the dataset
+--------------------------
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 150 entries, 0 to 149
+Data columns (total 5 columns):
+sepal length in cm    150 non-null float64
+sepal width in cm     150 non-null float64
+petal length in cm    150 non-null float64
+petal width in cm     150 non-null float64
+class                 150 non-null object
+dtypes: float64(4), object(1)
+memory usage: 6.0+ KB
+None
 ```
 ### 5. Summary statistics 
 Next up was to examine the dataset using some of the built-in functionality of Pandas. First, I used describe() to generate some descriptive statistics of the numeric and non-numeric datatypes, focusing on the central tendency, dispersion and shape of the dataset distribution. I also looked in more detail at the median, mode and variance as well as correlation and covariance.
