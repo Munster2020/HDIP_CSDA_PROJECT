@@ -36,12 +36,15 @@ The data set contains the following attributes.
 Below is a list of the software I used for the project.
 
 ![logo](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Visual%20Studio%20Code.png "Visual Studio Code")  ![Visual Studio Code](https://code.visualstudio.com/)
+is a source-code editor developed by Microsoft for Windows, Linux and macOS. It includes embedded Git and support for debugging, syntax highlighting, intelligent code completion, snippets, and code refactoring. It is highly customizable, allowing users to change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality. The source code is free and open-source, released under the permissive MIT License. The compiled binaries are freeware for any use. (Source:Wikipedia)
 
 ![logo](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Anaconda.png "Anacondas")
 ![Anacondas](https://www.anaconda.com/)
+is a free and open-source distribution of the Python and R programming languages for scientific computing (data science, machine learning applications, large-scale data processing, predictive analytics, etc.), that aims to simplify package management and deployment. The distribution includes data-science packages suitable for Windows, Linux, and macOS. (Source:Wikipedia)
 
 ![logo](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/cmdr.png "Cmder")
 ![Cmdr](https://cmder.net/)
+provides you with an alternative to the Windows default command prompt utility through a more capable console emulator that also comes packing a good-looking graphical user interface. (Source:downloads.com)
   
 ### Python Code
 ### 1. Import modules
