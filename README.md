@@ -81,12 +81,16 @@ print(iris_df.info())
 ```
 ### 5. Summary statistics 
 Next up was to examine the dataset using some of the built-in functionality of Pandas. First, I used describe() to generate some descriptive statistics of the numeric and non-numeric datatypes, focusing on the central tendency, dispersion and shape of the dataset distribution. I also looked in more detail at the median, mode and variance as well as correlation and covariance.
+
+#### 5.1 pandas.DataFrame.describe
+[DataFrame.describe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html) produces descriptive statistics that include summaries of the central tendency, dispersion and shape of a dataset’s distribution, excluding NaN values.
 ```python
 print ('===================================')
 print ('Statistical Summary of numeric data')
 print ('-----------------------------------')
 print (iris_df.describe())
 ```
+
 ```
 ===================================
 Statistical Summary of numeric data
