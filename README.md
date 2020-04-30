@@ -33,6 +33,10 @@ The data set contains the following attributes.
 
 ![Word Cloud](https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Header.PNG)
 
+<p align="center">
+  <img width="460" height="300" src="https://github.com/Munster2020/HDIP_CSDA_PROJECT/blob/master/Header/460/300">
+</p>
+
 ### Python Code
 ### 1. Import modules
 The first section of my code imports the modules I required for the project.
