@@ -136,14 +136,25 @@ petal length in cm    4.35
 petal width in cm     1.30
 dtype: float64
 ```
+#### 5.3 pandas.DataFrame.mode
+[DataFrame.mode](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.mode.html) returns a set of values that appears most often. It can be multiple values.
 
-
-
-```
+```python
 print ('===============')
 print ('Dataset Mode')
 print ('--------------')
 print (iris_df.mode(numeric_only=True))
+```
+```
+===============
+Dataset Mode
+--------------
+   sepal length in cm  sepal width in cm  petal length in cm  petal width in cm
+0                 5.0                3.0                 1.5                0.2
+```
+
+
+```python
 print ('===============')
 print ('Dataset Variance')
 print ('--------------')
