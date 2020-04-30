@@ -170,11 +170,25 @@ petal length in cm    3.113179
 petal width in cm     0.582414
 dtype: float64
 ```
+#### 5.5 pandas.DataFrame.corr
+[DataFrame.corr](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.corr.html) computes pairwise correlation of columns, excluding NA/null values.
 ```python
 print ('====================================')
 print ('Dataset Correlation Matrix Of Values')
 print ('------------------------------------')
 print (iris_df.corr())
+```
+```
+====================================
+Dataset Correlation Matrix Of Values
+------------------------------------
+                    sepal length in cm  sepal width in cm  petal length in cm  petal width in cm
+sepal length in cm            1.000000          -0.109369            0.871754           0.817954
+sepal width in cm            -0.109369           1.000000           -0.420516          -0.356544
+petal length in cm            0.871754          -0.420516            1.000000           0.962757
+petal width in cm             0.817954          -0.356544            0.962757           1.000000
+```
+```python
 print ('====================================')
 print ('Dataset Covariance Matrix Of Values')
 print ('------------------------------------')
